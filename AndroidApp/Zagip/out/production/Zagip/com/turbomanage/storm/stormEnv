@@ -1,0 +1,7 @@
+:CONV_START
+:CONV_END
+:DB_START
+dbName=DB4,helperClass=com.findeds.traveltracker.db.DBHelper,dbVersion=1
+com.findeds.traveltracker.entity.dao.TravelTable
+com.findeds.traveltracker.entity.dao.NotesTable
+:DB_END

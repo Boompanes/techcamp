@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@string/not_applicable"
+            android:src="@drawable/main_screen_rocket"/>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_weight="0"
+                android:orientation="vertical"
+                android:id="@+id/search_form"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <RelativeLayout
+                    android:id="@+id/layout_destination"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:id="@+id/iv_destination"
+                        android:layout_marginTop="2dp"
+                        android:src="@drawable/ic_action_place"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                <com.findeds.zagip.location.CustomAutoCompleteTextView
+                        android:id="@+id/et_destination"
+                        android:layout_toRightOf="@id/iv_destination"
+                        android:imeOptions="actionSearch"
+                        android:hint="@string/eds_enter_destination"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <ImageView
+                    android:id="@+id/icon_exchange"
+                    android:src="@drawable/ic_action_import_export"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                    android:id="@+id/layout_origin"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:id="@+id/iv_origin"
+                        android:src="@drawable/ic_action_location_found"
+                        android:layout_alignBottom="@+id/et_origin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                <EditText
+                        android:id="@+id/et_origin"
+                        android:background="@null"
+                        android:layout_marginLeft="10dp"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:singleLine="true"
+                        android:layout_toRightOf="@id/iv_origin"
+                        android:hint="@string/eds_requesting_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/tv_distance"
+                        android:text="Distance: 0.00 km"
+                        android:textSize="15dp"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <Button
+                    android:id="@+id/plan_travel"
+                    android:layout_gravity="center_horizontal"
+                    style="@style/ButtonGreen"
+                    android:layout_marginTop="10dp"
+                    android:text="Plan Travel"/>
+
+        </LinearLayout>
+
+        <View
+                android:id="@+id/separator"
+                android:background="@android:color/darker_gray"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"/>
+
+        <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/gmap_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                <fragment
+                        android:id="@+id/map"
+                        android:name="com.google.android.gms.maps.MapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+            </RelativeLayout>
+
+            <!--<ImageView-->
+            <!--android:id="@+id/gmap"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@drawable/sample_map"/>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/action_travel_log"
+            android:title="My Travels"
+            android:showAsAction="always"/>
+    <item
+            android:id="@+id/action_local_destinations"
+            android:title="Only local destinations"
+            android:checkable="true"
+            android:checked="true"
+            android:showAsAction="never"/>
+    <!--<item-->
+            <!--android:id="@+id/action_stats"-->
+            <!--android:title="Stats"-->
+            <!--android:showAsAction="never"/>-->
+</menu>

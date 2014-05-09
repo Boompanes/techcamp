@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../SlidingLayerLib/SlidingLayerLib.iml" filepath="$PROJECT_DIR$/../SlidingLayerLib/SlidingLayerLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Zagip.iml" filepath="$PROJECT_DIR$/Zagip.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../google-play-services_lib/google-play-services_lib.iml" filepath="$PROJECT_DIR$/../google-play-services_lib/google-play-services_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../routingLibrary/routingLibrary.iml" filepath="$PROJECT_DIR$/../routingLibrary/routingLibrary.iml" />
+    </modules>
+  </component>
+</project>
+

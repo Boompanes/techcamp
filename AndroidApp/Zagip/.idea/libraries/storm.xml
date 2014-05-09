@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="storm">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/persistence-api-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/storm-api-0.97.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/libs/storm-api-0.97.jar!/" />
+    </SOURCES>
+  </library>
+</component>

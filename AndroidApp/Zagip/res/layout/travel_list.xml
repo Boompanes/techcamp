@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff">
+
+    <!--holo: #fff3f3f3-->
+    <!--android:background="#14ad8f"-->
+
+    <TextView
+            android:id="@+id/title"
+            android:text="My Travels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-medium"
+            android:drawablePadding="15dip"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:textSize="17sp"
+            android:textColor="#074035"/>
+
+    <TextView
+            android:id="@+id/distance_total"
+            android:text="Total Distance: 100 km"
+            android:layout_below="@id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"/>
+
+    <!--<Button-->
+            <!--android:id="@+id/plan_travel"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignTop="@id/title"-->
+            <!--android:layout_alignBottom="@id/title"-->
+            <!--style="@style/ButtonRed"-->
+            <!--android:onClick="buttonClicked"-->
+            <!--android:text="X"/>-->
+
+    <ImageView
+            android:id="@+id/rocket"
+            android:layout_toLeftOf="@id/title"
+            android:layout_above="@id/distance_total"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingRight="-10dp"
+            android:src="@drawable/container_rocket_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <View
+            android:id="@+id/separator"
+            android:layout_below="@id/distance_total"
+            android:background="@android:color/darker_gray"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"/>
+
+    <ListView
+            android:id="@+id/list"
+            android:layout_below="@id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+    </ListView>
+
+</RelativeLayout>

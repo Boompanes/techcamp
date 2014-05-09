@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:id="@+id/linearLayout1"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <DatePicker
+            android:id="@+id/datePicker1"
+            android:layout_marginBottom="10dp"
+            android:calendarViewShown="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TimePicker
+            android:id="@+id/timePicker1"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:id="@+id/set_schedule"
+            style="@style/ButtonLight"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Set" />
+</LinearLayout>
